@@ -21,7 +21,6 @@ p{
     align-items: center;
     margin: auto;
     text-align: center;
-
 }
 .tarea-container{
     padding-left: 5px;
@@ -52,7 +51,6 @@ p{
 }
 .item-left{
     color: rgb(0, 0, 0);
-    display: flex;
     font-size: 15px;
     margin: 5px;
 
@@ -63,4 +61,39 @@ p{
     outline: none;
     border: none;
     color:black;
+  }
+  .botonDeBusqueda{
+    margin:5px;
+      border-radius: 4px;
+      background-color: rgb(28, 211, 28);
+      padding: 2px;
+  }
+  .botonDeBusqueda:hover{
+      background-color: aqua;
+  }
+  .container-especies{
+      display: flex;
+      justify-content: space-between;
+  }
+  .boton-eliminarAll{
+      margin:5px;
+      background-color: rgb(28, 211, 28);
+      border-radius: 4px;
+      padding: 2px;
+  }
+  .boton-eliminarAll:hover{
+      background-color: rgb(255, 94, 0);
+  }
+  .eraseUser{
+    margin:5px;
+    background-color: rgb(28, 211, 28);
+    border-radius: 4px;
+    padding: 2px;
+  }
+  .eraseUser:hover{
+    background-color: rgb(255, 94, 0);
+  }
+  .forUsers{
+      display: flex;
+      justify-content: space-between;
   }

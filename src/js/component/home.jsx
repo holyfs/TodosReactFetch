@@ -42,8 +42,12 @@ const Home = () => {
 			done: false,
 		};
 		const tareasActualizadas = [nuevaTarea, ...listaDeTareas];
-		const tareaUsuario = Api.UpdateUser(inputValue, tareasActualizadas);
-		getTareas(inputValue);
+		const tareaUsuario = Api.UpdateUser(
+			inputValue,
+			tareasActualizadas
+		).then(() => {
+			getTareas(inputValue);
+		});
 	};
 
 	const borrar = (e) => {

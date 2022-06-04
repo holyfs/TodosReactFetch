@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Form from "./Form.jsx";
 import Tarea from "./Tarea.jsx";
 import { AiOutlineClose } from "react-icons/ai";
-import Api from "/workspace/todosWithReact/src/js/component/Api.js";
+import Api from "../component/Api.js";
 
 const Home = () => {
 	const [inputValue, setInputValue] = useState("");

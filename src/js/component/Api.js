@@ -59,7 +59,7 @@ const UpdateUser = (name, todo) => {
 			console.log(error);
 		});
 };
-const DeleteUser = (name) => {
+/* const DeleteUser = (name) => {
 	return fetch(`https://assets.breatheco.de/apis/fake/todos/user/${name}`, {
 		method: "DELETE", // PUEDE ESTAR EN MINUISCULAS
 		headers: {
@@ -76,7 +76,7 @@ const DeleteUser = (name) => {
 			console.log(error);
 			return null;
 		});
-};
+}; */
 const CreateUser = (name) => {
 	return fetch(`https://assets.breatheco.de/apis/fake/todos/user/${name}`, {
 		method: "POST", // PUEDE ESTAR EN MINUISCULAS
@@ -97,4 +97,4 @@ const CreateUser = (name) => {
 		});
 };
 
-export default { GetUser, UpdateUser, DeleteUser, CreateUser };
+export default { GetUser, UpdateUser, CreateUser };

@@ -77,7 +77,7 @@ const Home = () => {
 			getTareas(inputValue);
 		});
 	};
-	const eraseUser = (name) => {
+	/* 	const eraseUser = (name) => {
 		Api.DeleteUser(name).then((resp) => {
 			if (resp.result === "ok") {
 				console.log(resp);
@@ -87,7 +87,7 @@ const Home = () => {
 				console.log({ inputValue });
 			}
 		});
-	};
+	}; */
 
 	return (
 		<div className="container">
@@ -102,6 +102,7 @@ const Home = () => {
 					type={"text"}
 					placeholder={"user Name"}
 					size={"100"}
+					value={inputValue}
 				/>
 				<div className="forUsers">
 					<button
@@ -109,13 +110,13 @@ const Home = () => {
 						className="botonDeBusqueda">
 						search/create user
 					</button>
-					<button
+					{/* <button
 						className="eraseUser"
 						onClick={() => {
 							eraseUser(inputValue);
 						}}>
 						delete user
-					</button>
+					</button> */}
 				</div>
 				<div>
 					<Form
